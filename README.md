@@ -24,13 +24,17 @@ A comprehensive Manual Quality Assurance and Client-Side Security Assessment for
 | Bug ID | Summary / Title | Severity | Priority | Category / Module | Reporter | Assignee | Status |
 | :--- | :--- | :---: | :---: | :--- | :--- | :--- | :---: |
 | **HLTHCR3-114** | The Appointment Status Can Change From Available to Booked After Losing Connection With Internet | Medium | Medium | Booking Engine & Checkout (`HLTHCR3-4`) | Mustafa Mohamed | Ahmed Sayed | Done |
+| **HLTHCR3-117** | The Slot Status Does Not Change From Available to Booked in Doctor's Page After Successful Transaction | Medium | Medium | Booking Engine & Checkout (`HLTHCR3-4`) | Mustafa Mohamed | Ahmed Sayed | Done |
 | **HLTHCR3-115** | The Appointment Status Can Not Change to Available After Cancellation | Medium | Medium | Post-Booking Lifecycle (`HLTHCR3-5`) | Mustafa Mohamed | Ahmed Sayed | Done |
 | **HLTHCR3-116** | The Cancel Booking Is Enabled When Appointment Time Is Less Than or Equal to 24 Hours | Medium | Medium | Post-Booking Lifecycle (`HLTHCR3-5`) | Mustafa Mohamed | Ahmed Sayed | Done |
-| **HLTHCR3-117** | The Slot Status Does Not Change From Available to Booked in Doctor's Page After Successful Transaction | Medium | Medium | Booking Engine & Checkout (`HLTHCR3-4`) | Mustafa Mohamed | Ahmed Sayed | Done |
 
 ---
 
 ## 🐛 Detailed Bug Reports
+
+### 📦 Epic: Booking Engine & Checkout (`HLTHCR3-4`)
+
+---
 
 ### HLTHCR3-114 — The Appointment Status Can Change From Available to Booked After Losing Connection With Internet
 
@@ -39,6 +43,7 @@ A comprehensive Manual Quality Assurance and Client-Side Security Assessment for
 | Field | Value |
 | :--- | :--- |
 | **Bug ID** | HLTHCR3-114 |
+| **Epic / Category** | Booking Engine & Checkout (`HLTHCR3-4`) |
 | **Status** | Done |
 | **Priority** | Medium |
 | **Severity** | Medium |
@@ -71,6 +76,50 @@ The booking process is completed successfully even after the internet connection
 
 ---
 
+### HLTHCR3-117 — The Slot Status Does Not Change From Available to Booked in Doctor's Page After Successful Transaction
+
+#### Meta Data
+
+| Field | Value |
+| :--- | :--- |
+| **Bug ID** | HLTHCR3-117 |
+| **Epic / Category** | Booking Engine & Checkout (`HLTHCR3-4`) |
+| **Status** | Done |
+| **Priority** | Medium |
+| **Severity** | Medium |
+| **Type** | Bug |
+| **Reporter** | Mustafa Mohamed |
+| **Assignee** | Ahmed Sayed |
+| **Resolution** | Done |
+| **Environment** | Lenovo-LOQ-15IRX9-Gaming-Laptop. |
+| **Linked Test Case** | Verify that the slot status change fr... (Done) Relates to HLTHCR3-58 |
+| **Created / Resolved** | 10/Sep/26 — 11/Sep/26 |
+
+#### Description
+The system fails to update the appointment slot status after a booking is completed. It allows a slot to remain marked as available on the doctor's page even though the transaction was completed successfully, violating the business requirement that slot availability must always reflect the current booking state.
+
+#### Steps to Reproduce
+1. Went to "My bookings", where there is already a confirmed booking with Dr. Sofia Patel on 11 September at 12:30 PM.
+2. Opened "Find doctors", selected Dr. Sofia Patel and looked at her available schedule.
+3. Noticed that the slot for 11 September at 12:30 PM was still clickable, so clicked on it.
+4. Was redirected to the "Confirm your booking" page and clicked on "Confirm appointment."
+5. The system blocked the booking at the final stage with the message "This slot has just been booked. Please choose another time."
+
+#### Expected Result
+The slot status should automatically change from "Available" to "Booked" on the doctor's page after completing a successful transaction.
+
+#### Actual Result
+The slot status remains "Available" on the doctor's page after completing a successful transaction.
+
+#### Attachments Reference
+* 📹 Bug slot status not change from available to booked.mp4
+
+---
+
+### 📦 Epic: Post-Booking Lifecycle (`HLTHCR3-5`)
+
+---
+
 ### HLTHCR3-115 — The Appointment Status Can Not Change to Available After Cancellation
 
 #### Meta Data
@@ -78,6 +127,7 @@ The booking process is completed successfully even after the internet connection
 | Field | Value |
 | :--- | :--- |
 | **Bug ID** | HLTHCR3-115 |
+| **Epic / Category** | Post-Booking Lifecycle (`HLTHCR3-5`) |
 | **Status** | Done |
 | **Priority** | Medium |
 | **Severity** | Medium |
@@ -116,6 +166,7 @@ The system blocks the booking and shows an error message saying that the appoint
 | Field | Value |
 | :--- | :--- |
 | **Bug ID** | HLTHCR3-116 |
+| **Epic / Category** | Post-Booking Lifecycle (`HLTHCR3-5`) |
 | **Status** | Done |
 | **Priority** | Medium |
 | **Severity** | Medium |
@@ -144,45 +195,6 @@ The system application allowed the cancellation without checking any time restri
 
 #### Attachments Reference
 * 📹 Bug booking is enabled when appointment less than 24 after cancellation.mp4
-
----
-
-### HLTHCR3-117 — The Slot Status Does Not Change From Available to Booked in Doctor's Page After Successful Transaction
-
-#### Meta Data
-
-| Field | Value |
-| :--- | :--- |
-| **Bug ID** | HLTHCR3-117 |
-| **Status** | Done |
-| **Priority** | Medium |
-| **Severity** | Medium |
-| **Type** | Bug |
-| **Reporter** | Mustafa Mohamed |
-| **Assignee** | Ahmed Sayed |
-| **Resolution** | Done |
-| **Environment** | Lenovo-LOQ-15IRX9-Gaming-Laptop. |
-| **Linked Test Case** | Verify that the slot status change fr... (Done) Relates to HLTHCR3-58 |
-| **Created / Resolved** | 10/Sep/26 — 11/Sep/26 |
-
-#### Description
-The system fails to update the appointment slot status after a booking is completed. It allows a slot to remain marked as available on the doctor's page even though the transaction was completed successfully, violating the business requirement that slot availability must always reflect the current booking state.
-
-#### Steps to Reproduce
-1. Went to "My bookings", where there is already a confirmed booking with Dr. Sofia Patel on 11 September at 12:30 PM.
-2. Opened "Find doctors", selected Dr. Sofia Patel and looked at her available schedule.
-3. Noticed that the slot for 11 September at 12:30 PM was still clickable, so clicked on it.
-4. Was redirected to the "Confirm your booking" page and clicked on "Confirm appointment."
-5. The system blocked the booking at the final stage with the message "This slot has just been booked. Please choose another time."
-
-#### Expected Result
-The slot status should automatically change from "Available" to "Booked" on the doctor's page after completing a successful transaction.
-
-#### Actual Result
-The slot status remains "Available" on the doctor's page after completing a successful transaction.
-
-#### Attachments Reference
-* 📹 Bug slot status not change from available to booked.mp4
 
 ---
 
