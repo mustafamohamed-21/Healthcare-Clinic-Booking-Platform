@@ -32,11 +32,11 @@ A comprehensive Manual Quality Assurance and Client-Side Security Assessment for
 
 ## 📁 Repository Structure
 
-* `/Bug_Report 1` : Contains bug reports and video evidence for `HLTHCR3-114` & `HLTHCR3-117` under the **Booking Engine & Checkout** module (`HLTHCR3-4`).
-* `/Bug_Report 2` : Contains bug reports and video evidence for `HLTHCR3-115` & `HLTHCR3-116` under the **Post-Booking Lifecycle Management** module (`HLTHCR3-5`).
 * `/Requirements` : Contains the original Software Requirements Specification (SRS) document, serving as the baseline for all test cases and traceability.
 * `/Test_Case 1` : Covers 15 test execution scenarios for **Appointment Booking Methods** (Cash, Credit Card), card field validations (16 digits, MM/YY, CVV), and reference/receipt generation.
+* `/Bug_Report 1` : Contains bug reports and video evidence for `HLTHCR3-114` & `HLTHCR3-117` under the **Booking Engine & Checkout** module (`HLTHCR3-4`).
 * `/Test_Case 2` : Covers 6 test execution scenarios for **Post-Booking Lifecycle Management**, including dashboard views (upcoming/cancelled), cancellation eligibility (>24h vs <=24h), and slot status updates upon cancellation.
+* `/Bug_Report 2` : Contains bug reports and video evidence for `HLTHCR3-115` & `HLTHCR3-116` under the **Post-Booking Lifecycle Management** module (`HLTHCR3-5`).
 
 ---
 
