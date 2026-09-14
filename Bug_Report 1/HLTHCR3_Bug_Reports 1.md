@@ -44,7 +44,7 @@ The booking process is completed successfully even after the internet connection
 
 ### Attachments Reference
 
-* 📹 Bug slot status change from Available to Booked.mp4
+* 📹 [Bug slot status change from Available to Booked.mp4](https://github.com/mustafamohamed-21/Healthcare-Clinic-Booking-Platform/blob/main/Bug_Report%201/Bug%20slot%20status%20not%20change%20from%20available%20to%20booked.mp4)
 
 ---
 
@@ -88,4 +88,4 @@ The slot status remains "Available" on the doctor's page after completing a succ
 
 ### Attachments Reference
 
-* 📹 Bug slot status not change from available to booked.mp4
+* 📹 [Bug slot status not change from available to booked.mp4](https://github.com/mustafamohamed-21/Healthcare-Clinic-Booking-Platform/blob/main/Bug_Report%201/Bug%20slot%20status%20not%20change%20from%20available%20to%20booked.mp4)
