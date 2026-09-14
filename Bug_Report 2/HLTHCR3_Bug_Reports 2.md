@@ -43,7 +43,7 @@ The system blocks the booking and shows an error message saying that the appoint
 
 ### Attachments Reference
 
-* 📹 Bug slot status change remain booked after cancellation.mp4
+* 📹 [Bug slot status change remain booked after cancellation.mp4](https://github.com/mustafamohamed-21/Healthcare-Clinic-Booking-Platform/blob/main/Bug_Report%202/Bug%20slot%20status%20change%20remain%20booked%20after%20cancellation.mp4)
 
 ---
 
@@ -86,4 +86,4 @@ The system application allowed the cancellation without checking any time restri
 
 ### Attachments Reference
 
-* 📹 Bug booking is enabled when appointment less than 24 after cancellation.mp4
+* 📹 [Bug booking is enabled when appointment less than 24 after cancellation.mp4](https://github.com/mustafamohamed-21/Healthcare-Clinic-Booking-Platform/blob/main/Bug_Report%202/Bug%20booking%20is%20enabled%20when%20appointment%20less%20than%2024%20after%20cancellation.mp4)
